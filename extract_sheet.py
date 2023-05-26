@@ -19,7 +19,7 @@ def extract_sheet_names(file):
 # Main web app code
 
 # Set Streamlit app title and description
-st.title("Sheet Names Extractor")
+st.title("Sheet Names Extractor cho Hyền")
 st.write("Upload an Excel file to extract sheet names.")
 
 # Create file upload widget
