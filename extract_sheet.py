@@ -37,7 +37,7 @@ if file is not None:
     if st.button("Download Sheet Names"):
         # Save DataFrame to Excel file
         excel_file = io.BytesIO()
-        with pd.ExcelWriter(excel_file, engine="xlsxwriter") as writer:
+        with pd.ExcelWriter(excel_file, engine="openpyxl") as writer:
             df_sheet_names.to_excel(writer, sheet_name="Sheet Names", index=False)
         excel_file.seek(0)
 
